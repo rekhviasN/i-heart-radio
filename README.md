@@ -4,10 +4,14 @@ This responsive, single-page React application allows you to search for artists 
 
 ## Installation
 
-npm i
-npm run build
-npm start 
-open to http://localhost:8000/
+#npm i -
+#npm run build
+#npm start -
+#open to http://localhost:8000/
+
+
+## Deployed site
+#http://i-heart-radio.herokuapp.com/
 
 ## License
 
