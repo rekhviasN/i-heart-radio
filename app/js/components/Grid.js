@@ -36,17 +36,17 @@ export default class Grid extends React.Component{
 	  	if(!artists.length) {
 	  		this.setState({ value: "", data: [], notFound : true })
 	  	}else{
-		  	const newGridData = artists.map(({artistName, artistId})=> { 
+		  	const newGridData = artists.map(({artistName, artistId})=> {
 		  		return {
-		  						name: artistName, 
-		  						url: "http://iscale.iheart.com/catalog/artist/"+artistId+"?ops=fit(250,0)"
-		  					 } 
+						name: artistName,
+						url: "http://iscale.iheart.com/catalog/artist/"+artistId+"?ops=fit(250,0)"
+					 }
 		  	})
 		  	this.setState({value: "", data: newGridData, notFound: false })
 		  }
 	  })
-	  .catch(error => console.log(error)) 
-	  
+	  .catch(error => console.log(error))
+
   }
 
 	render(){
@@ -55,7 +55,7 @@ export default class Grid extends React.Component{
 		return (
 			<div className="grid">
 				<div className="form">
-					<Form 
+					<Form
 						handleSubmit={this.handleSubmit}
 			      handleChange={this.handleChange}
 			      value={value}
@@ -64,12 +64,11 @@ export default class Grid extends React.Component{
 				</div>
 					<div className="main-body">
 						<div className="container-fluid">
-					      <div className="row">
-					        {data.slice(0,3).map((item, i)=> <Feature key={i} item={item} /> )}
-					    		<div className="clearfix visible-md visible-lg visible-sm"></div>
-					        {data.slice(3,6).map((item, i)=> <Feature key={i} item={item} /> )}
-					   	  </div>
-				   	  
+				      <div className="row">
+				        {data.slice(0,3).map((item, i)=> <Feature key={i} item={item} /> )}
+				    		<div className="clearfix visible-md visible-lg visible-sm"></div>
+				        {data.slice(3,6).map((item, i)=> <Feature key={i} item={item} /> )}
+				   	  </div>
 					</div>
 				</div>
 			</div>

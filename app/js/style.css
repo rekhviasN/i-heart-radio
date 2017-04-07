@@ -22,7 +22,7 @@ button {
 img {
     max-width: 100%;
     height: auto;
-    width: auto\9; 
+    width: auto\9;
 }
 
 /*header*/
@@ -137,7 +137,7 @@ img {
 }
 
 .feature-artist-name {
-	padding-top: 5%
+	padding-top: 5%;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-weight: bold;
 	font-size: 30px;
@@ -177,7 +177,6 @@ img {
 
 @media screen and (max-width: 248px) {
     .feature-artist-name {
-        background: lightgreen;
         font-size: 14px;
         overflow: scroll
     };

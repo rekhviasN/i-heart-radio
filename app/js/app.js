@@ -7,12 +7,12 @@ import BodyHead from './components/BodyHead.js'
 
 class App extends React.Component {
   render () {
-    return( 
+    return(
     	<div>
-            <Header />
-            <BodyHead />
-            <Grid />
-            <Footer />
+        <Header />
+        <BodyHead />
+        <Grid />
+        <Footer />
     	</div>
     )	
   }
